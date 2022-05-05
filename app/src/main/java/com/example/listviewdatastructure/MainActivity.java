@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 Log.i("info", "Added new item to list");
                 fruits_list.add("Freaky");
-                fruits_list.add("Jolly");
+                //fruits_list.add("Jolly");
 
                 adapter.notifyDataSetChanged();
             }

@@ -12,6 +12,12 @@
         android:layout_height="wrap_content"
         android:text="Hello World!" />
 
+    <EditText
+        android:id="@+id/userInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
     <Button
         android:id="@+id/click"
         android:layout_width="match_parent"
