@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         inputUser = (EditText)findViewById(R.id.userInput);
 
 
-        String[] fruits = new String[] {""};
+        String[] fruits = new String[] {};
 
         List<String> fruits_list = new ArrayList<String>(Arrays.asList(fruits));
 
