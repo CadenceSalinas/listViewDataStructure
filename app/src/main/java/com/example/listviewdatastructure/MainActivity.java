@@ -17,6 +17,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    ListView list;
+    Button add;
+    EditText inputUser;
     String setAnswer;
 
     @Override
@@ -24,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ListView list = (ListView)findViewById(R.id.list);
-        Button add = (Button)findViewById(R.id.click);
-        EditText inputUser = (EditText)findViewById(R.id.userInput);
+        list = (ListView)findViewById(R.id.list);
+        add = (Button)findViewById(R.id.click);
+        inputUser = (EditText)findViewById(R.id.userInput);
 
 
         String[] fruits = new String[] {""};
