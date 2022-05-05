@@ -43,9 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 setAnswer = inputUser.getText().toString();
 
                 Log.i("info", "Added new item to list");
-                fruits_list.add("Freaky");
                 fruits_list.add(setAnswer);
-                //fruits_list.add("Jolly");
 
                 adapter.notifyDataSetChanged();
             }
