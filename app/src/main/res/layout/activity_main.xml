@@ -19,12 +19,6 @@
 <!--        android:ems="10"-->
 <!--        android:inputType="number" />-->
 
-    <Button
-        android:id="@+id/click"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"

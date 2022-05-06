@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         list = (ListView)findViewById(R.id.list);
-        add = (Button)findViewById(R.id.click);
+        //add = (Button)findViewById(R.id.click);
         //inputUser = (EditText)findViewById(R.id.userInput);
         listInput = new queue();
 
@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
         listInput.add(1);
         listInput.add(2);
         listInput.add(6);
-        String[] numbers = new String[] {};
         int num = listInput.getSize();
 
+        String[] numbers = new String[] {};
         List<String> numbers_list = new ArrayList<String>(Arrays.asList(numbers));
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, numbers_list);
@@ -51,21 +51,21 @@ public class MainActivity extends AppCompatActivity {
 
 
         list.setAdapter(adapter);
-        add.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v)
-            {
-                //setAnswer = inputUser.getText().toString();
-
-
-                Log.i("info", "Added new item to list");
-                for(int i = 0; i < num; i++)
-                {
-                    listInput.remove();
-                    adapter.notifyDataSetChanged();
-                }
-
-            }
-        });
+//        add.setOnClickListener(new View.OnClickListener()
+//        {
+//            public void onClick(View v)
+//            {
+//                //setAnswer = inputUser.getText().toString();
+//
+//
+//                Log.i("info", "Added new item to list");
+//                for(int i = 0; i < num; i++)
+//                {
+//                    listInput.remove();
+//                    adapter.notifyDataSetChanged();
+//                }
+//
+//            }
+//        });
     }
 }
