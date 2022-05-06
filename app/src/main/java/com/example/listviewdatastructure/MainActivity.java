@@ -45,6 +45,10 @@ public class MainActivity extends AppCompatActivity {
         listInput.add(724);
         listInput.add(727);
         listInput.add(80);
+//        for(int i = 30; i >= 1; i--)
+//        {
+//            listInput.add(i);
+//        }
 
         int num = listInput.getSize();
 
