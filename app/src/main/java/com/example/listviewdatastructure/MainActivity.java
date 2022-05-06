@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     Button add;
     //EditText inputUser;
     String setAnswer;
+    queue listInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,13 +31,24 @@ public class MainActivity extends AppCompatActivity {
         list = (ListView)findViewById(R.id.list);
         add = (Button)findViewById(R.id.click);
         //inputUser = (EditText)findViewById(R.id.userInput);
+        listInput = new queue();
 
 
-        String[] fruits = new String[] {};
+        listInput.add(1);
+        listInput.add(2);
+        listInput.add(6);
+        String[] numbers = new String[] {};
+        int num = listInput.getSize();
 
-        List<String> fruits_list = new ArrayList<String>(Arrays.asList(fruits));
+        List<String> numbers_list = new ArrayList<String>(Arrays.asList(numbers));
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, fruits_list);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, numbers_list);
+
+        for(int i = 0; i < num; i++)
+        {
+            adapter.add(listInput.data(i) + "");
+        }
+
 
         list.setAdapter(adapter);
         add.setOnClickListener(new View.OnClickListener()
@@ -45,10 +57,14 @@ public class MainActivity extends AppCompatActivity {
             {
                 //setAnswer = inputUser.getText().toString();
 
-                Log.i("info", "Added new item to list");
-                fruits_list.add(setAnswer);
 
-                adapter.notifyDataSetChanged();
+                Log.i("info", "Added new item to list");
+                for(int i = 0; i < num; i++)
+                {
+                    listInput.remove();
+                    adapter.notifyDataSetChanged();
+                }
+
             }
         });
     }
