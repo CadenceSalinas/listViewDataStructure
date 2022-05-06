@@ -18,9 +18,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     ListView list;
-    Button add;
-    //EditText inputUser;
-    String setAnswer;
     queue listInput;
 
     @Override
@@ -29,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         list = (ListView)findViewById(R.id.list);
-        //add = (Button)findViewById(R.id.click);
-        //inputUser = (EditText)findViewById(R.id.userInput);
         listInput = new queue();
 
 
@@ -51,21 +46,5 @@ public class MainActivity extends AppCompatActivity {
 
 
         list.setAdapter(adapter);
-//        add.setOnClickListener(new View.OnClickListener()
-//        {
-//            public void onClick(View v)
-//            {
-//                //setAnswer = inputUser.getText().toString();
-//
-//
-//                Log.i("info", "Added new item to list");
-//                for(int i = 0; i < num; i++)
-//                {
-//                    listInput.remove();
-//                    adapter.notifyDataSetChanged();
-//                }
-//
-//            }
-//        });
     }
 }
