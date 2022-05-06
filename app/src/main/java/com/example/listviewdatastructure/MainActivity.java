@@ -28,10 +28,18 @@ public class MainActivity extends AppCompatActivity {
         list = (ListView)findViewById(R.id.list);
         listInput = new queue();
 
-
         listInput.add(1);
         listInput.add(2);
         listInput.add(6);
+        listInput.add(7);
+        listInput.add(10);
+        listInput.add(242);
+        listInput.add(14);
+        listInput.add(10);
+        listInput.add(9);
+        listInput.add(786);
+        listInput.add(100000000);
+
         int num = listInput.getSize();
 
         String[] numbers = new String[] {};
@@ -43,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         {
             adapter.add(listInput.data(i) + "");
         }
-
 
         list.setAdapter(adapter);
     }
