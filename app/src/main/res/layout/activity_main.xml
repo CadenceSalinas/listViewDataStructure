@@ -12,12 +12,12 @@
         android:layout_height="wrap_content"
         android:text="Hello World!" />
 
-    <EditText
-        android:id="@+id/userInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number" />
+<!--    <EditText-->
+<!--        android:id="@+id/userInput"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="number" />-->
 
     <Button
         android:id="@+id/click"

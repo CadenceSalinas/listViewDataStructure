@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     ListView list;
     Button add;
-    EditText inputUser;
+    //EditText inputUser;
     String setAnswer;
 
     @Override
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         list = (ListView)findViewById(R.id.list);
         add = (Button)findViewById(R.id.click);
-        inputUser = (EditText)findViewById(R.id.userInput);
+        //inputUser = (EditText)findViewById(R.id.userInput);
 
 
         String[] fruits = new String[] {};
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         {
             public void onClick(View v)
             {
-                setAnswer = inputUser.getText().toString();
+                //setAnswer = inputUser.getText().toString();
 
                 Log.i("info", "Added new item to list");
                 fruits_list.add(setAnswer);
