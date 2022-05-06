@@ -39,6 +39,12 @@ public class MainActivity extends AppCompatActivity {
         listInput.add(9);
         listInput.add(786);
         listInput.add(100000000);
+        listInput.add(0);
+        listInput.add(13456);
+        listInput.add(7531);
+        listInput.add(724);
+        listInput.add(727);
+        listInput.add(80);
 
         int num = listInput.getSize();
 
